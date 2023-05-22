@@ -1,0 +1,31 @@
+
+.page {
+    padding: 100px 0;
+
+
+
+    &.home {
+        > div {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    &.user {
+    
+        .user-posts {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }    
+    }
+
+    &.about {
+        padding: 90px 0 0;
+        iframe {
+            width: calc(100vw - 16px);
+            height: calc(100vh - 100px);
+        }
+    }
+}

@@ -1,0 +1,101 @@
+header {
+    background: rgba(64, 0, 255, 0.2);
+    box-shadow: 0 5px 10px rgba(64, 0, 255, 0.06), 0 10px 20px rgba(64, 0, 255, 0.2);
+    backdrop-filter: blur(2px);
+}
+
+.sidebar {
+    position: fixed;
+    z-index: 2222;
+    top: 0;
+    left: -100%;
+    width: 350px;
+    height: 100vh;
+    background-color: #230549a1;
+    backdrop-filter: blur(2px);
+
+    &.show {
+        animation: show .5s ease-in-out;
+        left: 0;
+    }
+
+    &.hide {
+        animation: hide .5s ease-in-out;
+        left: -100%;
+    }
+
+    >button {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 5px solid rgb(0, 196, 0);
+        margin: 40px 0;
+    }
+
+    a {
+        font-size: 20px;
+        color: #fff;
+        opacity: .7;
+        text-decoration: none;
+        transition: .3s ease;
+
+        &:hover,
+        &.active {
+            opacity: 1;
+            text-decoration: underline;
+        }
+    }
+
+    .path-links>a {
+        text-decoration: none;
+        border: 1px solid blue;
+        margin: 15px 0;
+        padding: 5px;
+        color: blue;
+        background-color: aliceblue;
+        font-weight: 600;
+    }
+}
+
+// Post card
+.post-card {
+    img {
+        cursor: pointer;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin: 0 0 20px;
+    }
+
+    button {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
+
+@keyframes show {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes hide {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: -100%;
+    }
+}

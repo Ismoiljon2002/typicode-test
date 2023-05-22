@@ -1,0 +1,20 @@
+.page {
+  padding: 100px 0;
+}
+.page.home > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.page.user .user-posts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.page.about {
+  padding: 90px 0 0;
+}
+.page.about iframe {
+  width: calc(100vw - 16px);
+  height: calc(100vh - 100px);
+}/*# sourceMappingURL=pages.css.map */
