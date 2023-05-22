@@ -1,4 +1,4 @@
-#  Website using Fake RestAPI [typicode.com]:https://jsonplaceholder.typicode.com 
+#  Website using Fake RestAPI https://jsonplaceholder.typicode.com 
 
 ## Steps to run the project: 
 
